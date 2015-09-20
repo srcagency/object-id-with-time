@@ -1,0 +1,12 @@
+{
+	"name": "object-id-with-time",
+	"version": "0.0.1",
+	"repository": "srcagency/object-id-with-time",
+	"dependencies": {
+		"mongodb": "^2.0.43"
+	},
+	"devDependencies": {
+		"tape": "^4.2.0"
+	},
+	"license": "MIT"
+}
