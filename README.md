@@ -8,8 +8,11 @@ rest with zeroes which is impractical for creating sample data.
 
 ```js
 var ObjectId = require('mongodb').ObjectId;
-var objectIdWithTime = require('objectIdWithTime');
+var fromDate = require('object-id-with-time');
 
-ObjectId.createFromTime(Date('2015-09-20T15:20:17Z')/1000);	// ObjectId('55feceb10000000000000000')
-objectIdWithTime(Date('2015-09-20T15:20:17Z')); 			// ObjectId('55feceb10692accd3612ca31')
+ObjectId.createFromTime(Date('2015-09-20T15:20:17Z') / 1000);
+// -> ObjectId('55feceb10000000000000000')
+
+fromDate(Date('2015-09-20T15:20:17Z'));
+// -> ObjectId('55feceb10692accd3612ca31')
 ```
